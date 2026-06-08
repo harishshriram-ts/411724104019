@@ -1,0 +1,122 @@
+p{
+    font-size: x-large;
+    font-weight: bolder;
+
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    padding: 20px;
+    border: 1px dashed black;
+    margin: 20px;
+}
+/* img{
+    border-radius:50%;
+  
+} */
+video{
+    border-radius: 60%;
+  
+}
+.imvi{
+    padding: 20px;
+    background-color: rgb(111, 144, 173);
+}
+.p1{
+    font-family: 'Times New Roman', Times, serif;
+}
+#p2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* nav{
+    display: flex;
+    gap: 20px;
+    flex-direction:row-reverse;
+    color: rgb(231, 224, 224);
+    background-color: black;
+} */
+ol{
+    list-style:square;
+}
+table,td,th{
+    border: 2px solid black;
+    border-collapse:collapse
+}
+th{
+    background-color: aqua;
+}
+td{
+    background-color: cadetblue;
+}
+button{
+    background-color: aquamarine;
+    border-radius: 10px;
+    border-color: transparent;
+    padding: 5px;
+    margin: 20px;
+}
+button:hover{
+    background-color: bisque;
+    cursor: pointer;
+}
+h1:hover{
+    color:blue;
+}
+form{
+    text-align: center;
+    width:50%;
+    border: 2px solid black;
+    padding: 50px;
+    background-color: antiquewhite;
+    
+}
+ .grid{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 100%;
+} 
+#one,#two,#three{
+    background-color: aqua;
+    grid-row: 1/2;
+    
+}
+#four,#five,#six{
+    grid-row: 2/3;
+    background-color: rgb(155, 155, 68);
+    
+}
+#img1,#img2,#img3{
+    
+}
+.Festival{
+    display: grid;
+    grid-template-columns:  50% 50%;
+}
+video{
+    height: auto;
+    width: 100%;
+}
+
+/* @media (min-width:600px) {
+    .Festival{
+        height: auto;
+        width: 400px;
+        background-color:   blueviolet;
+        
+    } */
+    /* :) */
+/* } */
+
+@media  (min-width:600px){
+        nav{
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 50px;
+
+        }
+        .grid{
+            display: grid;
+            
+        }
+}
