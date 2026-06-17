@@ -1,35 +1,75 @@
-// console.log("Hello world");
-// let val = document.getElementById("p-id")
-// val.innerHTML = "Hi there harish";
+// console.log("Hello World");
+// console.log("Harish");
 
-// let f1 = 10;
-// let f2 = 20;
-// console.log(f1)
+// console.log("A");
+// setTimeout(()=>{
+//     console.log("B")
+// },2000)
+// console.log("Harish")
+// console.log("Monishhh")
+// console.log("C")
 
-// // // const a = "Harish"
-// let a = ["Apple","Orange","Yellow"];
-// // // a[1]="Balana"
-// // // console.log(a[1])
-// let b  = document.getElementById("arr-pr")
-// for(let i=0;i<a.length;i++){
-//     b.innerHTML = a[i]
+// const pro = new Promise((scuess,failer)=>{
+//     const s = true;
+//     if(s){
+//         console.log("YEahhh")
+//     }else{
+//         console.log("Soory Bruhh")
+//     }
+// })
+
+// Pro.then(res=>{console.log(res)})
+// .catch(err=>{console.log(err)})
+
+// function example(){
+//     console.log("Hi");
 // }
-// const fin = document.getElementById("p-id")
-// fin.innerHTML = "THis is a new line"
-
-
-// function newfun(){
-//     console.log("I am typing somethig")
+// const example1 = ()=>{
+//     console.log("HEllo")
 // }
 
-const input = document.getElementById("event");
+// // console.log(example());
+// // console.log(example1)
 
-const output = document.getElementById("ptag");
-input.addEventListener("input",()=>{
-    output.textContent=input.value
+// const promise = new promise((resolve,reject)=>{
+//     setTimeout(example,4500)
+//     setTimeout(example1,0)
+// })
+
+const pro = new Promise((success, failure) => {
+    const s = true;
+    if(s){
+        success("YEahhh");   
+    }else{
+        failure("Soory Bruhh"); 
+    }
+});
+
+pro.then(res => {
+    console.log(res);
 })
+.catch(err => {
+    console.log(err);
+});
 
- const newvar = document.createElement("p")
- newvar.textContent = "Po da ";
- document.body.appendChild(newvar)
- newvar.remove()
+function example(){
+    console.log("Hi");
+}
+const example1 = () => {
+    console.log("Hello");
+}
+
+const promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        example();         
+        resolve("Done after 4.5s");
+    }, 4500);
+
+    setTimeout(() => {
+        example1();
+                
+    }, 0);
+});
+
+promise.then(msg => console.log(msg))
+       .catch(err => console.log(err));
